@@ -8,13 +8,6 @@ public class Sample {
         return op.func.apply(a, b);
     }
 
-    public int fact(int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("N should be positive");
-        }
-        return n == 0 ? 1 : n * fact(n - 1);
-    }
-
     enum Operation {
         ADD((a, b) -> a + b),
         MULT((a, b) -> a * b),
